@@ -9,8 +9,8 @@ export default function TopMenuItem( {
     pageRef:string
 }) {
     return (
-        <div className="px-5 block py-4 hover:bg-gray-500 cursor-pointer transition-colors duration-200 font-bold">
-            <Link href={pageRef} className={styles.itemcontainer} >{title}</Link>
-        </div>
+        <Link href={pageRef} className="px-2 block py-4 hover:bg-gray-500 cursor-pointer transition-colors duration-200 font-bold">
+            <div className={styles.itemcontainer} >{title}</div>
+        </Link>
     );
 }
