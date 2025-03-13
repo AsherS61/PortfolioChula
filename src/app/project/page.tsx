@@ -4,10 +4,10 @@ import ProjectBox from "@/components/ProjectBox";
 import ProjectSideBar from "@/components/ProjectSideBar";
 
 export default function Home() {
-  const methEmblemRef = useRef<HTMLDivElement>(null);
-  const digitalCpuRef = useRef<HTMLDivElement>(null);
-  const wordleRef = useRef<HTMLDivElement>(null);
-  const connect4Ref = useRef<HTMLDivElement>(null);
+    const methEmblemRef = useRef<HTMLDivElement | null>(null);
+    const digitalCpuRef = useRef<HTMLDivElement | null>(null);
+    const wordleRef = useRef<HTMLDivElement | null>(null);
+    const connect4Ref = useRef<HTMLDivElement | null>(null);
 
   return (
     <main className="flex">
@@ -35,15 +35,6 @@ export default function Home() {
         image="/img/connect-4.png" link="https://github.com/AsherS61/Connect-Four-in-Cpp-With-ML" tags={["C++", "Game Development", "Machine Learning"]} />
 
       </div>
-
-      <ProjectSideBar 
-        projects={[
-          { name: "Meth-Emblem", ref : methEmblemRef },
-          { name: "Digital CPU", ref: digitalCpuRef },
-          { name: "Wordle In Python", ref: wordleRef },
-          { name: "Connect-4 With ML Bot", ref: connect4Ref }
-        ]}
-      />
     </main>
   );
 }

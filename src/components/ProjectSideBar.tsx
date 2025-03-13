@@ -1,6 +1,6 @@
 interface Project {
     name: string;
-    ref: React.RefObject<HTMLDivElement>;
+    ref: React.RefObject<HTMLDivElement | null>;
 }
 
 interface ProjectSideBarProps {
@@ -14,7 +14,7 @@ export default function ProjectSideBar({ projects }: ProjectSideBarProps) {
             {projects.map((project) => (
                 <button
                     key={project.name}
-                    onClick={() => project.ref.current?.scrollIntoView({ block:"center",behavior: "smooth" })}
+                    onClick={() => project.ref?.current?.scrollIntoView({ block:"center",behavior: "smooth" })}
                     className="block p-2 hover:bg-gray-700 w-full text-left"
                 >
                     {project.name}
