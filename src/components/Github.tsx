@@ -7,7 +7,7 @@ export default function GithubIcon( {link} : {link:string}) {
                 href={link} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-white"
+                className="text-gray-400 hover:text-white transition"
             >
                 <FaGithub size={50} />
             </a>

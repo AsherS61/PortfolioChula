@@ -1,22 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import ProjectSideBar from "@/components/ProjectSideBar";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Portfolio"
-};
-
-export default function RootLayout({
+export default function ProjectLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body>
+    <div>
         {children}
-      </body>
-    </html>
+    </div>
   );
 }
