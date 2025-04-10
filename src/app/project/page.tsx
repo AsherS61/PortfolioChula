@@ -29,7 +29,7 @@ export default function Home() {
 
         <ProjectBox ref={sadudlarngear} name="Sadud-larngear" 
         description="A website that allows users to post their experiences in a forum format, adding in comments and emotion points. This is based on a belief that if you trip at Chulalornkorn University's Engineering Department's Larngear, your wish would come true or your luck is turn for the better. This website will collect and let people post or view stories of these events." 
-        image="/img/larngear.png" link="https://github.com/DayKungZa/sadud-larngear" tags={["Front-end", "Back-end", "WebDev", "JavaScript", "TypeScript", "AI ChatBox", "SQL"]} />
+        image="/img/larngear.png" link="https://sadud-larngear.vercel.app" tags={["Front-end", "Back-end", "WebDev", "JavaScript", "TypeScript", "AI ChatBox", "SQL"]} />
 
         <ProjectBox ref={digitalCpuRef} name="Digital CPU" description="This is an 8-bit CPU that is made from a digital simulation software using logic gates. It can do basic arithmetics, logics, and memory operations using opcode/oprand." 
         image="/img/digital.png" link="https://github.com/AsherS61/DigitalLogicCPU" tags={["Digital Logic", "Hardware", "Computer Architecture"]} />
